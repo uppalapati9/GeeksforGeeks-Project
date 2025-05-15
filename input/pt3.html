@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<br>
+    <form action="/submituserdata" method="post" target="_blank" autocomplete="off">
+        <input type="text" name="email" placeholder="Enter your email">
+        <input type="password" name="pwd" placeholder="Enter your password">
+        <input type="submit" value="Login">
+
+        <br></br>
+
+        <label>what is your age</label>
+        <select name="userage" size="10">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+        </select>  
+
+    <br></br>
+
+        <textarea name="message" row="10" col="50"
+            style="width:100px;height:100px;max-width:150px;max-height:300px">
+        </textarea>
+         
+        <br></br>
+
+         <button type="button" onclick="alert('Hey there')">Don't Click</button> 
+
+         <br></br>
+
+         <fieldset>
+            <legend>Login</legend>
+            <input type="text" name="email" placeholder="Enter your email"list="myname">
+            <datalist id="myname">
+                <option value="name1"></option>
+                <option value="name2"></option>
+                <option value="name3"></option>
+            </datalist>
+            <input type="password" name="pwd" placeholder="Enter your password">
+             <input type="submit" value="Login" formaction="/someotherpath"
+             formenctype="multipart/form-data" formmethod="get"
+             formtarget="_blank"> 
+         </fieldset>
+    </form>
+     <!-- <input type="submit" value="Login" form="form1">  -->
+</body>
+</html>
